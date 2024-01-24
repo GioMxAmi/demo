@@ -1,0 +1,158 @@
+.subscribe-button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity .15s;
+  vertical-align: top; /*so that the buttons dont align via text, but the buttons themselves*/
+}
+
+.join-button {
+  background-color: white;
+  color: rgb(6,95,212);
+  border: 1px solid rgb(6,95,212); 
+  border-radius: 2px;
+  padding: 9px 15px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color .15s, color .15s; /* multiple properties allowed, separated by comma*/
+
+}
+
+.tweet-button {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(29, 155, 240);
+  padding: 10px 15px; 
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow .15s;
+  vertical-align: top;
+}
+
+.cart-button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255,216,20);
+  color: black;
+  padding: 10px 40px;
+  transition: background-color .15s;
+}
+
+.buy-button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255,164,28);
+  color: black;
+  padding: 10px 40px;
+  transition: background-color .15s;
+}
+
+.back-button, .next-button {
+  border: 1px solid gray;
+  color: black;
+  padding: 10px 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.stretch-button {
+  color: white;
+  border: none;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: padding .8s;
+  cursor: pointer;
+}
+
+.shadow-button {
+  color: white;
+  border: none;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .4);
+}
+.one, .two, .three {
+  color: white;
+  border: none;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-left: 12px;
+  transition: padding .15s, margin .15s;
+}
+.subscribe-button:hover {
+  opacity: .6;
+}
+.subscribe-button:active { /*when selected */
+  opacity: .4;
+}
+.join-button:hover {
+  background-color: rgb(54, 54, 181);
+  color: white;
+}
+.join-button:active {
+  opacity: 0.7;
+}
+
+.tweet-button:hover {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, .15);
+}
+
+.amazon-link {
+  color: rgb(0, 113, 133);
+
+}
+.amazon-link:hover {
+  color: rgb(163, 86, 19);
+}
+
+.cart-button:hover{
+  background-color: rgb(233, 196, 12);
+}
+.cart-button:active{
+  background-color: rgba(255,216,20, .5);
+}
+
+.buy-button:hover{
+  background-color: rgb(228, 147, 25);
+}
+.buy-button:active{
+  background-color: rgba(255,164,28, .5);
+}
+a {
+  padding-right: 8px;
+}
+
+.stretch-button:hover {
+  padding: 20px 30px;
+}
+.shadow-button:active {
+  margin: 5px 5px;
+  box-shadow: none;
+}
+.three:hover {
+  padding: 10px 20px;
+  margin-left: 2px;
+}
+.one:hover {
+  padding: 10px 20px;
+  margin-right: 2px; 
+}
+.two:hover {
+  padding: 10px 20px;
+  margin-left: 6px;
+  margin-right: 8px;
+}

@@ -1,0 +1,74 @@
+@media (max-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 56px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+    
+  }
+  .sidebar-link {
+    background-color: white;
+    height: 74px;
+    display: flex;
+    /*justify-content affects vertical direction when flex direction is column
+      align-items affects horizontal direction when column
+    */
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  /* all images inside all sidebar links, images that are children of elements with sidebar-link class*/
+  .sidebar-link img {
+    height: 26px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link div {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 56px;
+    background-color: white;
+    width: 196px;
+    z-index: 200;
+    padding-top: 5px;
+    font-weight: bold;
+  }
+  .sidebar-link {
+    background-color: white;
+    height: 44px;
+    display: flex;
+    /*justify-content affects vertical direction when flex direction is column
+      align-items affects horizontal direction when column
+    */
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  /* all images inside all sidebar links, images that are children of elements with sidebar-link class*/
+  .sidebar-link img {
+    height: 26px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 26px;
+    padding-top: 6px;
+  }
+  
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nested flexbox</title>
+    <style>
+      p {
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .first-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+      }
+      .left-side {
+        width: 100px;
+        height: 80px;
+        background-color: lightpink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right-side {
+        width: 200px;
+        height: 80px;
+        background-color: lightblue;
+      }
+      .box-item {
+        background-color: black;
+        color: white;
+      }
+      .left-side-two {
+        width: 100px;
+        height: 80px;
+        background-color: lightpink;
+      }
+      .right-side-two {
+        width: 200px;
+        height: 80px;
+        background-color: lightblue;
+        display: flex;
+      }
+      .top-right {
+        display: flex;
+      }
+      .bottom-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+      }
+
+      .mail-container {
+        border-radius: 2px;
+        box-shadow: 1px 1px 3px 2px rgba(0,0,0, .14);
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 14px;
+        padding-bottom: 8px;
+        width: 365px;
+        margin-bottom: 20px;
+      }
+      .mail-title {
+        color: gray;
+        font-family: sans-serif;
+        padding-bottom: 15px;
+        font-size: 13px;
+        
+      }
+      .mail-pic {
+        width: 48px;
+        border-radius: 24px;
+        margin-right: 10px;
+      }
+      .mail-flexbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .inner-mail-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+      }
+      .sender-name {
+        font-weight: bold;
+        margin-bottom: 4px;
+        flex: 1;
+      }
+      .time {
+        color: gray;
+        font-size: 12px;
+        
+      }
+      .mail-subject {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 3px;
+        padding-right: 10px;
+      }
+      .mail-body {
+        font-size: 14px;
+        color: gray;
+        padding-right: 10px;
+      }
+      .twitter-container {
+        margin-top: 20px;
+        width: 440px;
+        padding-top: 10px;
+        padding-left: 14px;
+        padding-bottom: 20px;
+      } 
+      .top-flexbox {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      .bottom-flexbox {
+        display: flex;
+        flex-direction: row; 
+        justify-content: right;
+        border: none;
+        width: 348px;
+        margin-left: 56px;    
+      }
+      .handle {
+        color: rgb(110, 108, 108);
+        font-weight: 400;
+      }
+      .twitter-name {
+        font-weight: bold;
+      }
+      .gray-square {
+        background-color: rgb(209, 207, 207);
+        height: 80px;
+        width: 160px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding-bottom: 10px;
+      }
+      .right-section {
+        border: 1px solid rgb(209, 207, 207);
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        padding-bottom: 10px;
+      }
+      .youtube-name {
+        margin-left: 12px;
+        margin-top: 14px;
+        margin-bottom: 3px;
+        color: rgb(110, 108, 108);
+      }
+      .video-title {
+        margin-left: 12px;    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="left-side">
+        <div class="box-item">item 1</div>
+      </div>
+      <div class="right-side">
+        
+      </div>
+    </div>
+
+    <p>13b</p>
+    <div class="first-container">
+      <div class="left-side">
+        
+      </div>
+      <div class="right-side">
+        <div class="top-right">
+          row 1
+        </div>
+        <div class="bottom-right">
+          <div class="box-item">
+            row 2
+          </div>
+          <div class="box-item">
+            row 2
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p>Gmail ios</p>
+
+    <div class="mail-container">
+      <div class="mail-title">ALL INBOXES</div>
+    
+      <div class="mail-flexbox">
+        <div>
+          <img src="thumbnails/prairie.jpg" class="mail-pic">
+        </div>
+        <div>
+          <div class="inner-mail-box">
+            <div class="sender-name">Chewy Promotions</div> 
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="mail-subject">
+            Biggest Sales of the year!
+          </div>
+          <div class="mail-body">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+      <div class="mail-flexbox">
+        <div>
+          <img src="thumbnails/prairie.jpg" class="mail-pic">
+        </div>
+        <div>
+          <div class="inner-mail-box">
+            <div class="sender-name">Best Buy</div> 
+            <div class="time">12:32 PM</div>
+          </div>
+          <div class="mail-subject">
+            Your Best Buy eReceipt
+          </div>
+          <div class="mail-body">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+      <div class="mail-flexbox">
+        <div>
+          <img src="thumbnails/prairie.jpg" class="mail-pic">
+        </div>
+        <div>
+          <div class="inner-mail-box">
+            <div class="sender-name">Netflix</div> 
+            <div class="time">9:00 AM</div>
+          </div>
+          <div class="mail-subject">
+            Here's what's coming soon to Netflix
+          </div>
+          <div class="mail-body">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p>twitter design</p>
+    <div class="twitter-container">
+      <div class="top-flexbox">
+        <div>
+          <img src="thumbnails/prairie.jpg" class="mail-pic">
+        </div>
+        <div>
+          <div class="twitter-name">
+            supersimple.dev <span class="handle">@SuperSimpleDev</span>
+          </div>
+          <div>What is backend web development? A complete overview. New video is up!</div>
+          
+        </div>
+      </div>
+      <div class="bottom-flexbox">
+        <div class="gray-square">
+
+        </div>
+        <div class="right-section">
+          <div class="youtube-name">
+            youtube.com
+          </div>
+          <div class="video-title">
+            Backend web development - a complete overview (2021)
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

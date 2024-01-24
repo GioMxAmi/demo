@@ -1,0 +1,109 @@
+p {
+  font-family: Roboto;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  width: 280px;
+  line-height: 24px;
+}
+.video-stats {
+  font-size: 14px;
+  color: #606060;
+  margin-top: 7px;
+}
+.video-author {
+font-size: 14px;
+color: #606060;
+margin-top: 20px;
+}
+.video-description {
+font-size: 14px;
+color: #606060;
+width: 280px;
+line-height: 22px;
+margin-top: 20px;
+margin-bottom: 100px;
+}
+.apple-text{
+margin-bottom: 50px;
+color: white;
+font-size: 14px;
+background-color: #e34140;
+padding: 18px 0px;
+text-align: center;
+}
+.apple-link {
+color: white;
+text-decoration: none;
+/*use margins for spaces between words*/
+}
+.apple-link:hover {
+text-decoration: underline;
+}
+.first-line{
+color: red;
+font-size: 14px;
+text-align: center;
+}
+.second-line{
+color: black;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+margin-top: 10px;
+}
+.third-line{
+color: black;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+}
+.fourth-line{
+color: black;
+text-align: center;
+margin-top: 14px;
+}
+.fifth-line {
+text-align: center;
+margin-top: 10px;
+}
+.buy-button {
+color: white;
+background-color: rgb(51, 109, 202);
+border: none;
+border-radius: 20px;
+padding: 6px 12px;
+
+}
+.first-line-b {
+color: black;
+font-size: 30px;
+text-align: center;
+margin-top: 20px;
+}
+.second-line-b {
+color: green;
+font-size: 16px;
+margin-top: 7px;
+text-align: center;
+}
+.third-line-b {
+color:rgb(90, 84, 84);
+font-size:16px;
+margin-top: 7px;
+text-align: center;
+}
+.currency {
+color: grey;
+font-size: 16px;
+margin-left: 5px;
+font-weight: bold;
+}
+.percentage {
+color: red;
+font-size: 16px;
+
+}

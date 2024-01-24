@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>grid practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!--there are two columns, each 100px wide-->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px; 
+    ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2<p>text</p></div>
+    </div>
+    
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px 200px; 
+      margin-top: 30px;
+    ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px<p>text</p></div>
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: lightpink;">100px</div>
+
+
+    </div>
+    <!--fr means free space, to take up the remaining, two cols here, the second will take up the remaining space on the length of the page-->
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr; 
+    margin-top: 30px;
+  ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">1fr</div>
+    
+  </div>
+  <!--the two and three cols take up equal space remaining since there is a 1 in front of the fr
+  if one of them was 2fr then it would take twice as much space as the 1fr col-->
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr; 
+    margin-top: 30px;
+  ">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: lightpink;">1fr</div>
+    <div style="background-color: lightblue;">1fr</div>
+    
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 40px;
+  ">
+    <div style="background-color: lightblue; height:200px;">1fr</div>
+    <div style="background-color: lightpink; height: 200px;">1fr</div>
+    <div style="background-color: lightblue; height: 200px;">1fr</div>
+    <div style="background-color: lightpink; height:200px;">1fr</div>
+    <div style="background-color: lightblue; height: 200px;">1fr</div>
+    <div style="background-color: lightpink; height: 200px;">1fr</div>
+    
+  </div>
+  <!--exercises-->
+
+  <div style="
+    display: grid;
+    grid-template-columns: 200px 75px;
+    margin-top: 30px;
+  ">
+    <div style="background-color: lightblue;">200px</div>
+    <div style="background-color: lightpink;">75px</div>
+
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    margin-top: 30px;
+  ">
+  <div style="background-color: lightblue;">col1</div>
+  <div style="background-color: lightpink;">col2</div>
+  <div style="background-color: lightblue;">col3</div>
+</div>
+
+<div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+  ">
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col1</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col2</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col3</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col4</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col1</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col2</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col3</div>
+  <div style="background-color: lightpink; margin-right: 20px; ; margin-bottom: 10px;">col4</div>
+</div>
+
+  </body>
+</html>

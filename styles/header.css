@@ -1,0 +1,157 @@
+
+/*if you have top: 20px bottom: 20 px it will stretch the element to meet the conditions
+      same goes for left and right. using all 4 would make it resize with the page, use height if you do not want to resize.*/
+.header {
+  height: 56px;
+  display: flex; /*use when focus on content size first*/
+  flex-direction: row; /*horizontally*/
+  justify-content: space-between; /* spread them evenly on the header*/
+  position: fixed;
+  background-color: white;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  z-index: 100;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  /*inset makes the shadow on the inside of the element*/
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,.05);
+  text-align: left;
+  flex: 1;
+  font-size: 16px;
+  border: 1px solid rgb(192,192,192);
+  width: 0; /*now will shrink as much as possible with the page getting smaller*/
+}
+.search-bar:focus {
+  outline: 1px solid blue;
+}
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.left-section {  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ham-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.tube-logo {
+  height: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192,192,192);
+  margin-right: 10px;
+  margin-left: -1px;
+  position: relative;
+}
+.search-icon {
+  height: 26px;
+}
+.voice-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  
+}
+.voice-icon {
+  height: 24px;
+
+}
+.search-button, .voice-button, .upload-container, .apps-container, .notifications-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.right-section {
+  margin-right: 20px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0; /*prevents the box from shrinking when less space on page, 0 shrink*/
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+
+.notifications-count {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  background-color: #cc0000;
+  color: white;
+  border-radius: 80px;
+  font-size: 10px;
+  padding: 1px 5px;
+}
+.user-picture {
+  height: 32px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+/*in video it is done with opacity 0 and then hover opacity 1, instead of display none, block
+  because we want to use transition to smooth the appearance of the tooltip appearing
+*/
+.search-button .tooltip, .voice-button .tooltip, .upload-container .tooltip, 
+.apps-container .tooltip, .notifications-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  font-family: Roboto, arial;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  
+  opacity: 0;
+  transition: opacity 0.15s;
+  /*this is so when the mouse hovers over the tooltip itself, it is not displayed, only when you hover over the button does it display*/
+  pointer-events: none;
+  white-space: nowrap;
+   /*so text does not wrap around*/
+ }
+ .search-button:hover .tooltip, .voice-button:hover .tooltip, .upload-container:hover .tooltip,
+ .apps-container:hover .tooltip, .notifications-icon-container:hover .tooltip{
+  opacity: 1;
+ }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flexbox practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      display: flex;
+      flex-direction: row;  
+    ">
+      <div style="background: lightblue;">div 1</div>
+      <!--will maintain vert alignment even though one is taller. flexbox is another way to do horizontal layouts while maintaining alignment-->
+      <div style="background-color: lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;  
+      margin-top: 40px;
+    ">
+      <div style="background: lightblue; width: 100px;">100px</div>
+      <!--flex: 1 makes it so it takes up the remaining amount of space-->
+      <div style="background-color: lightpink; flex: 1;">flex 1<p>text</p></div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;  
+      margin-top: 40px;
+    ">
+      <div style="background: lightblue; width: 100px;">100px</div>
+      <!--two items that have flex attrib take the remaining amount of space and the number tells us how much of the space it takes. the flex 2 takes twice the amount as flex 1. items take their width along with them if they move around, regardless of the flex attribute, unlike grid-->
+      <div style="background-color: lightpink; flex: 1;">flex 1<p>text</p></div>
+      <div style="background: lightblue; flex:2;">flex 2</div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;  
+      margin-top: 40px;
+      height:  70px;
+      border: 1px solid gray;
+      justify-content: center;
+    ">
+    <!--justify content determines how the items are positioned in the flexbox
+    start end or center-->
+      <div style="background: lightblue; width: 100px;">100px</div>
+      
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background: lightblue; width: 100px;">100px</div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;  
+      margin-top: 40px;
+      height:  70px;
+      border: 1px solid gray;
+      justify-content: space-between;
+    ">
+    <!--justify content determines how the items are positioned in the flexbox
+    start end or center, space between spreads them evenly throughout the box and makes sure there is even space between them-->
+      <div style="background: lightblue; width: 100px;">100px</div>
+      
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background: lightblue; width: 100px;">100px</div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: row;  
+      margin-top: 40px;
+      height:  70px;
+      border: 1px solid gray;
+      justify-content: space-between;
+      align-items: center;
+    ">
+    <!--align items is for vertical alignment start end center, stretch default-->
+      <div style="background: lightblue; width: 100px;">100px</div>
+      
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background: lightblue; width: 100px;">100px</div>
+    </div>
+    <!--exercises-->
+    <div style="
+      display: flex;
+      margin-top: 30px;
+      flex-direction: row;
+    ">
+      <div style="background-color: lightblue; width: 200px">200px</div>
+      <div style="background-color: lightpink; width: 75px">75px</div>
+      <div></div>
+    </div>
+
+    <div style="
+      display: flex;
+      margin-top: 30px;
+      flex-direction: row;
+    ">
+      <div style="background-color: lightblue; width: 50px">item 1</div>
+      <div style="background-color: lightpink; flex: 1">item 2</div>
+      <div style="background-color: lightblue; width: 75px">item 3</div>
+      <div></div>
+    </div>
+
+    <div style="
+      display: flex;
+      margin-top: 30px;
+      flex-direction: row;
+      border: 1px solid gray;
+      height: 50px;
+      align-items: center;
+      justify-content: space-between;
+    ">
+      <div style="background-color: lightblue; width: 100px">item 1</div>
+      <div style="background-color: lightpink; width: 100px">item 2</div>
+    </div>
+
+    <div style="
+      display: flex;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+
+    ">
+      <div style="background-color: lightpink; width: 50px;">item 1</div>
+      <div style="background-color: lightpink; width: 50px;">item 2</div>
+      <div style="background-color: lightpink; width: 50px;">item 3</div>
+      <div style="background-color: lightpink; width: 50px;">item 4</div>
+    </div>
+  </body>
+</html>

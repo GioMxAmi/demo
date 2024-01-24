@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position practice</title>
+
+  </head>
+  <!--best practice to use padding-top -->
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+  ">
+    <!--if you have top: 20px bottom: 20 px it will stretch the element to meet the conditions
+      same goes for left and right. using all 4 would make it resize with the page, use height if you do not want to resize. z index determines which elements appear in front usually set to 100 if page has a lot of layers. 0 is default, higher number will mean the element appears above elements with lower numbers. when a position absolute is placed inside a fixed element, it is placed relative to the fixed. so top is top of the fixed element not page
+    -->
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: 1;
+      ">
+      header
+    </div>
+    <div style="
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: orange;
+      width: 72px;
+      top: 50px;
+      height: 1000px;
+    ">
+      sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0;
+      right: 0;
+      font-family: Arial;
+    ">
+      X
+    </div>
+    </div>
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 30px;
+      right: 10px;
+    ">
+      absolute
+    </div>
+    <div style="
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;
+      position: static;
+      ">
+      div 1
+    </div>
+    <!--if put absolute into relative, will position it relative to that element-->
+    <div style="
+      background-color: lightpink;
+      width: 200px;
+      height: 200px;
+      position: relative;
+    ">
+      div 2
+      <div style="
+      position: absolute;
+      background-color: black;
+      color: white;
+      bottom: 10px;
+      right: 10px;
+      font-family: Arial;
+    ">
+      5:00
+    </div>
+    </div>
+  </body>
+  </html>
